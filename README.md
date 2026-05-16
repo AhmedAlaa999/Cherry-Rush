@@ -19,7 +19,7 @@ It is a game like you rush collect all the cherries before the time out and you 
 
 ### Level 1
 
-* Goal: Collect 40 cherries
+* Goal: Collect cherries
 * Lose if:
 
   * You collect 10 danger cherries
@@ -29,7 +29,7 @@ It is a game like you rush collect all the cherries before the time out and you 
 
 * Faster gameplay
 * More difficult challenge
-* Goal: Collect 60 cherries
+* Goal: Collect cherries
 
 ## Built With
 
