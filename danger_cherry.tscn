@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://blnwspxgsjene"]
+
+[ext_resource type="Script" uid="uid://imd4bwe30on1" path="res://danger_cherry.gd" id="1_7ec0l"]
+[ext_resource type="Texture2D" uid="uid://fvyuq31617vq" path="res://Player/Pickups/Cheery/cherry.png" id="2_mqc5i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rx5wv"]
+atlas = ExtResource("2_mqc5i")
+region = Rect2(21, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_173qf"]
+atlas = ExtResource("2_mqc5i")
+region = Rect2(42, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8qxj"]
+atlas = ExtResource("2_mqc5i")
+region = Rect2(63, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtl6t"]
+atlas = ExtResource("2_mqc5i")
+region = Rect2(84, 0, 21, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxft0"]
+atlas = ExtResource("2_mqc5i")
+region = Rect2(0, 0, 21, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e4q4g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rx5wv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_173qf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8qxj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtl6t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8qxj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rx5wv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxft0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxft0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l227y"]
+
+[node name="Danger_Cherry" type="Area2D" unique_id=1739112316]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_7ec0l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1498830639]
+modulate = Color(0, 0, 0, 1)
+sprite_frames = SubResource("SpriteFrames_e4q4g")
+autoplay = "default"
+frame_progress = 0.558616
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=273911052]
+shape = SubResource("CircleShape2D_l227y")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
