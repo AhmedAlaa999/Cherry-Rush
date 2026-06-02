@@ -6,6 +6,9 @@ It is a game like you rush collect all the cherries before the time out and you 
 * Avoid danger cherries.
 * Reach the required amount of cherries before time ends.
 * Survive through multiple levels with increasing difficulty.
+  
+## ScreenShot
+<img width="625" height="350" alt="image" src="https://github.com/user-attachments/assets/3ca1e39c-ebf5-4765-84a3-8c23efe6504a" />
 
 ## Controls
 
